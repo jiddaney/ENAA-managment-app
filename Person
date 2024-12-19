@@ -12,7 +12,7 @@ abstract class Person {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
-
+//geter sitter
     public int getId() {
         return id;
     }

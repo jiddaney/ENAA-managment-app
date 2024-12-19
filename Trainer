@@ -5,7 +5,7 @@ class Trainer extends Person {
     public Trainer(int id, String firstName, String lastName, String email, String phoneNumber) {
         super(id, firstName, lastName, email, phoneNumber);
     }
-
+// adding array list
     public static Trainer findTrainerById(int id, ArrayList<Trainer> trainers) {
         for (Trainer trainer : trainers) {
             if (trainer.getId() == id) {

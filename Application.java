@@ -31,6 +31,7 @@ class ManagementSystem {  //adding managment system
 
     public void run() {
         while (true) {
+              //adding menu
             try {
                 System.out.println("\nWelcome to the ENAA Management Application");
                 System.out.println("1. Manage Classes");

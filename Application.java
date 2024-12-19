@@ -167,6 +167,7 @@ class ManagementSystem {  //adding managment system
     private void manageTrainers() {
         while (true) {
             try {
+                //adding managment trainers menu
                 System.out.println("\nTrainer Management Menu:");
                 System.out.println("1. Add Trainer");
                 System.out.println("2. Display Trainers");

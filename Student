@@ -12,7 +12,7 @@ class Student extends Person {
     public String getClassName() {
         return className;
     }
-
+//finder for student
     public static Student findStudentById(int id, ArrayList<Student> students) {
         for (Student student : students) {
             if (student.getId() == id) {

@@ -95,6 +95,7 @@ class ManagementSystem {  //adding managment system
 
     private void createClass() {
         try {
+            //adding class creation
             System.out.print("Enter the class name: ");
             String className = scanner.next();
 

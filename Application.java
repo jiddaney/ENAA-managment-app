@@ -45,6 +45,7 @@ class ManagementSystem {  //adding managment system
                 int choice = getValidInt();
 
                 switch (choice) {
+                    //adding options
                     case 1 -> manageClasses();
                     case 2 -> displayClasses();
                     case 3 -> displayStudents();

@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+class Classe {
+
+    private String className;
+    private final Trainer trainer;
+
+    public Classe(String className, Trainer trainer) {
+        this.className = className;
+        this.trainer = trainer;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public Trainer getTrainer() {
+        return trainer;
+    }
+
+    public static Classe findClassByName(String name, ArrayList<Classe> classes) {
+        for (Classe classe : classes) {
+            if (classe.getClassName().equalsIgnoreCase(name)) {
+                return classe;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Class[Name: " + className + ", Trainer: " + trainer.getFirstName() + " " + trainer.getLastName() + "]";
+    }
+}

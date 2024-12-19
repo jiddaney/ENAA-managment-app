@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+class Trainer extends Person {
+
+    public Trainer(int id, String firstName, String lastName, String email, String phoneNumber) {
+        super(id, firstName, lastName, email, phoneNumber);
+    }
+
+    public static Trainer findTrainerById(int id, ArrayList<Trainer> trainers) {
+        for (Trainer trainer : trainers) {
+            if (trainer.getId() == id) {
+                return trainer;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Trainer[ID: " + getId() + ", Name: " + getFirstName() + " " + getLastName() + ", Email: " + getEmail()
+                + ", Phone: " + getPhoneNumber() + "]";
+    }
+}

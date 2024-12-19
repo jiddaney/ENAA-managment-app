@@ -11,7 +11,7 @@ public class Application {
     }
 }
 
-class ManagementSystem {
+class ManagementSystem {  //adding managment system
 
     private final Scanner scanner;
     private final ArrayList<Classe> classes;

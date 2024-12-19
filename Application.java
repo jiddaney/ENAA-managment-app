@@ -128,6 +128,7 @@ class ManagementSystem {  //adding managment system
 
     private void modifyClass() {
         try {
+            //adding class modification
             System.out.print("Enter the class name to modify: ");
             String className = scanner.next();
 

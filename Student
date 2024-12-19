@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+class Student extends Person {
+
+    private final String className;
+
+    public Student(int id, String firstName, String lastName, String email, String phoneNumber, String className) {
+        super(id, firstName, lastName, email, phoneNumber);
+        this.className = className;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public static Student findStudentById(int id, ArrayList<Student> students) {
+        for (Student student : students) {
+            if (student.getId() == id) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Student[ID: " + getId() + ", Name: " + getFirstName() + " " + getLastName() + ", Email: " + getEmail()
+                + ", Phone: " + getPhoneNumber() + ", Class: " + className + "]";
+    }
+}

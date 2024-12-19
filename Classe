@@ -9,7 +9,7 @@ class Classe {
         this.className = className;
         this.trainer = trainer;
     }
-
+                                                                                                                                                                                                                                                        //add gitter and seter
     public String getClassName() {
         return className;
     }

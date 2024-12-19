@@ -67,6 +67,7 @@ class ManagementSystem {  //adding managment system
     private void manageClasses() {
         while (true) {
             try {
+                //adding menu #2
                 System.out.println("\nClass Management Menu:");
                 System.out.println("1. Create Class");
                 System.out.println("2. Modify Class Information");
